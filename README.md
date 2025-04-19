@@ -1,5 +1,7 @@
 # docker
-- run `./MCEditUnifiedDocker.sh`
+- run `./MCEditUnifiedDocker.sh <path_to_your_minecraft>` to build one time
+- run `./mcedit.sh` to run every time
+
 
 # MCEdit-Unified
 
