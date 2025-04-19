@@ -16,5 +16,5 @@ fi
 
 set -x
 
-docker build . -f MCEditDockerfile -t mceditunified
+
 docker run --rm -it --pid=host -e DISPLAY=$DISPLAY -v $INPUTSDIR:$MCDIR -v /tmp/.X11-unix:/tmp/.X11-unix:ro mceditunified

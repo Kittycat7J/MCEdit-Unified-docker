@@ -1,7 +1,8 @@
 FROM ubuntu:18.04
-RUN date
+
 COPY . /MCEdit
 WORKDIR /MCEdit
+
 RUN set -x \
     && apt-get -y update \
     && apt-get -y install \
@@ -18,3 +19,5 @@ RUN set -x \
     && pip install -r requirements-osx.txt \
     && python setup.py all \
     && set +x
+
+CMD ["/MCEdit/mcedit.sh"]
